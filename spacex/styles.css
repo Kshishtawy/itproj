@@ -6,8 +6,9 @@
 
 body{
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 27%, rgba(55,55,55,1) 50%, rgba(87,87,87,1) 69%, rgba(140,140,140,1) 97%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 27%, rgb(44, 44, 44) 50%, rgb(53, 53, 53) 69%, rgb(41, 41, 41) 97%);
 }
+
 
 .introAnim{
     background-color: black;
@@ -60,7 +61,6 @@ body{
 .spacexLogo{
     width: 30vw;
     height: auto;
-    
 }
 
 .textCont{
@@ -103,7 +103,8 @@ body{
     justify-content: center;
     background: url(./Photos/What\ Spacex.png);
     background-position: 50% 50%;
-    background-size: cover; 
+    background-size: cover;
+    overflow: hidden;
 }
 
 .causeCont{
@@ -145,6 +146,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-bottom: 6vh;
+    scroll-snap-align: start;
 }
 
 .failvid{
@@ -239,6 +241,7 @@ body{
     background-position: 20% 0%;
     background-size: cover;
     top: 500px;
+    overflow: hidden;
 }
 
 .sucTextCont{
