@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+        .cont{
+            width: 600px;
+            height: 400px;
+            display: flex;
+            flex-flow: column wrap;
+            background-color: antiquewhite;
+            border-color: aqua;
+            margin: auto;
+            margin-top: 200px;
+            border-style: outset ;
+            border-color: rgb(173, 173, 173);
+        }
+        .textCont{
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+            height: auto;
+        }
+
+        .item1{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(255, 255, 255);
+            height: 33%;
+            width: auto;
+            border-bottom: 2px solid rgb(173, 173, 173);
+        }
+        .item1Pic{
+            width: 20%;
+            height: 100%;
+
+        }
+
+        .text1{
+            margin-left: 10%;
+            margin-top: 10%;
+            font-size: 20px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+        .subtext1{
+            margin-left: 10%;
+            margin-top: 0;
+            font-size: 15px;
+            color: rgb(124, 124, 124);
+            
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .item2{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(255, 255, 255);
+            height: 33%;
+            width: auto;
+            border-bottom: 2px solid rgb(173, 173, 173);
+        }
+
+        .item3{
+            display: flex;
+            flex-flow: row wrap;
+            background-color: rgb(255, 255, 255);
+            height: 34%;
+            overflow: hidden;
+            width: auto;
+            border-bottom: 1px solid rgb(173, 173, 173);
+        }
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <div class="item1">
+            <img src="/tests/elon.jpg" alt="elon pic" class="item1Pic">
+            <div class="textCont">
+                <p class="text1">item 1 and stuff</p>
+                <p class="subtext1">item 1 but grayer</p>
+            </div>
+        </div>
+
+        <div class="item2">
+
+        </div>
+
+        <div class="item3">
+
+        </div>
+    </div>
+</body>
+</html>

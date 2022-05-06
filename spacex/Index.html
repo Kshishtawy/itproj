@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./Photos/spacexIcon.png" type="image/icon png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="introAnim">
+        <img src="./Photos/spacexLogo.jpg" alt="logo" class="introLogo">
+    </div>
+    <div class="slider"></div>
+    <section class="s1">
+        <div class="textCont">
+            <h1 class="text1">From a dream to colonize Mars, SpaceX was born</h1>
+        </div>
+
+        <div class="spacexLogoCont">
+            <img src="./Photos/spacexLogoT.png" alt="spacexLogo" class="spacexLogo">
+        </div>
+
+        <div class="elonCont">
+            <img src="./Photos/elon.png" class="elonPic" alt="Elon Musk Picture">
+        </div>
+        
+    </section>
+
+    <section class="s2">
+        <div class="causeCont">
+            <h2 class="causeTitle"> What is SpaceX anyway?</h2>
+            <p class="causeText">SpaceX was founded in 2002 by Elon Musk with the goal of reducing space transportation costs to enable the colonization of Mars. 
+                           <br> <br> <strong>(Sounds like some text copied from wikipedia... lets just say it's an amazing super-cool rocket company, ok?)</strong>    
+            </p>
+        </div>
+    </section>
+
+
+    <section class="s3">
+        <video autoplay muted loop class="failvid">
+            <source src="./Videos/spacex fail vid.mp4" type="video/mp4">
+        </video>
+
+        <div class="falconCont">
+            <img src="./Photos/Rocketfail.jpg" alt="falcon1 photo" class="falcon">
+        </div>
+
+        <div class="faconTextCont">
+            <h2 class="falconTitle"> Time to Give Up?</h2>
+            <p class="falconText">After the third failure in row and the Millions of dollars wasted, 
+                                giving up seemed like a reasonable choice. However, Elon was determined enough for the fourth attempt, <br> 
+                                <strong> the attempt that changed the course of history. </strong></p>
+
+            <p class="falconTextit">"I don't ever give up. I'd have to be dead or completely incapacitated."</p>
+            <p class="falconTextit2">- Elon Musk</p>
+
+        </div>
+    </section>
+
+    <section class="s4">
+        <div class="sucTextCont">
+            <h2 class="sucTitle">SpaceX Makes History</h2>
+            <p class="sucText">Elon was trying to achieve reusable rockets, 
+                            which can fly to space and come back in one piece. 
+                            This revolutionary idea came to life with the fourth attempt. 
+                            <strong>Soon after that, NASA made a $1.6 Billion business contract with SpaceX.</strong></p>
+        </div>
+
+        <div class="sucVidCont">
+            <video autoplay muted loop class="sucVid">
+                <source src="./Videos/SpacexSuccess.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="/app.js"></script>
+</body>
+</html>

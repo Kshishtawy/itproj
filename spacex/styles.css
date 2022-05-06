@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 27%, rgba(55,55,55,1) 50%, rgba(87,87,87,1) 69%, rgba(140,140,140,1) 97%);
+}
+
+.introAnim{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.slider{
+    background-color: rgb(56, 56, 56);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(-100%);
+}
+.s1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background: url(/Photos/galaxy3.png);
+    box-shadow: 
+    inset 20px 0 500px rgb(0, 0, 0),  
+    inset -20px 0 500px rgb(51, 51, 51);
+    background-position: 50% 50%;
+    background-size: cover; 
+    overflow: hidden;
+}
+
+.spacexLogoCont{
+    position: absolute;
+    align-items: center;
+    top: 10%;
+    left: 5%;
+    transform: translate(-5%, -10%);
+    
+}
+
+.spacexLogo{
+    width: 30vw;
+    height: auto;
+    
+}
+
+.textCont{
+    width: 60vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.text1{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3vw;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+}
+
+.elonCont{
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.elonPic{
+    width: 40vw;
+    height: auto;
+    margin: auto;
+}
+
+.s2{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: url(/Photos/What\ Spacex.png);
+    background-position: 50% 50%;
+    background-size: cover; 
+}
+
+.causeCont{
+    margin: auto;
+    padding: 2vw;
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 10px;
+}
+
+.causeTitle{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+    letter-spacing: 0.5vw;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    margin-bottom: 5vh;
+}
+
+.causeText{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 2vw;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+.causeText strong {
+    font-size: 1vw;
+    font-weight: lighter;
+}
+
+.s3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6vh;
+}
+
+.failvid{
+    position: absolute;
+    left: 0;
+    top: 200vh;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.falconCont{
+    width: 40vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.falcon{
+    width: 35vw;
+    height: 70vh;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 30% 50%;
+    box-shadow: 
+    inset 20px 0 100px rgb(0, 0, 0),  
+    inset -20px 0 100px rgb(51, 51, 51);
+    
+}
+
+.faconTextCont {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.falconTitle{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6vw;
+    margin-top: 16vh;
+    text-shadow: 2px 2px 10px black;
+}
+
+.falconText{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 2vw;
+    text-align: left;
+    margin-top: 5vh;
+    width: 42vw;
+    text-shadow: 1px 1px 5px black;
+}
+
+.falconTextit{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 2vw;
+    text-align: left;
+    margin-top: 5vh;
+    width: 42vw;
+    text-shadow: 1px 1px 5px black;
+    font-style: italic;
+}
+
+.falconTextit2{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 2vw;
+    text-align: right;
+    margin-top: 1vh;
+    width: 42vw;
+    text-shadow: 1px 1px 5px black;
+    font-style: italic;
+}
+.falconText strong{
+    color: rgb(91, 238, 169);
+    font-weight: bold;
+}
+
+.s4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-flow: column wrap;
+    background: url(/Photos/elonSuc2.jpg);
+    background-position: 20% 0%;
+    background-size: cover;
+    top: 500px;
+}
+
+.sucTextCont{
+    width: auto;
+    height: 50vh;
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: auto;
+    margin-right: 5vw;
+    padding-top: 10vh;
+}
+
+.sucTitle{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 6vw;
+    align-self: center;
+    text-shadow: 2px 2px 10px black;
+}
+
+.sucText{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-size: 1.8vw;
+    text-align: left;
+    margin-top: 1vh;
+    text-align: center;
+    align-self: center;
+    width: 45vw;
+    text-shadow: 1px 1px 5px black;
+}
+
+.sucText strong{
+    color: rgb(111, 190, 255);
+}
+
+.sucVidCont{
+    width: auto;
+    height: 50vh;
+    margin-left: auto; 
+    margin-right: 5vw;
+}
+
+.sucVid{
+    width: 45vw;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: 0% 50%;
+    box-shadow: 
+     5px 0 20px rgb(0, 0, 0),  
+     -5px 0 20px rgb(0, 0, 0);
+}
