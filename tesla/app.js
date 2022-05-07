@@ -36,7 +36,7 @@ gsap.to(".s2Textbg", {scrollTrigger: { trigger: ".s2Textbg", start: "top 20%"}, 
 
 gsap.from(".s2Stag", {scrollTrigger: { trigger: ".s2Stag", start: "top 60%"}, stagger: 0.4, y: 100, opacity: 0, duration: 1}); //s2 ends here
 
-gsap.from(".s3hide", {scrollTrigger: { trigger: ".s3hide", start: "top 40%"}, y: 100, opacity: 0, duration: 1}); s3BtnContStag
+gsap.from(".s3hide", {scrollTrigger: { trigger: ".s3hide", start: "top 40%"}, y: 100, opacity: 0, duration: 1});
 
 gsap.from(".leftimg", {scrollTrigger: { trigger: ".leftimg", start: "top center"}, x: -100 , opacity: 0, duration: 2, ease: "power2.Out"});
 
