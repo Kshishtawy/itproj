@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --skew: 0deg;
+    --left: 48%;
+    --s4Expand: 20vw;
+}
+
+.introAnim{
+    background-color: rgb(250, 250, 250);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.introLogo{
+    width: 20vw;
+    height: auto;
+}
+
+.slider{
+    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    transform: translateY(-100%);
+}
+
+.s1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(./photos/teslaS1.jpg);
+    box-shadow: 
+    inset 1px 0 5px  rgb(255, 41, 41),  
+    inset -1px 0 5px  rgb(255, 39, 39);
+    background-position: 50% 50%;
+    background-size: cover; 
+    overflow: hidden;
+    
+}
+
+.scrollDown{
+    position: absolute;
+    width: 1vw;
+    height: auto;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+}
+
+/* .teslaLogoCont{  css of logo
+    position: absolute;
+    align-items: center;
+    top: 8%;
+    right: 5%;
+    transform: translate(-5%, -5%);
+}
+
+.teslaLogo{
+    width: 12vw;
+    height: auto;
+}
+*/
+
+.elonCont{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.elonPic{
+    width: 45vw;
+    height: auto;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+.textCont{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+    justify-content: center;
+    
+}
+
+.s1Text{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: left;
+}
+
+.s1TextAns{
+    color: rgb(221, 43, 43);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vw;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    text-align: right;
+    padding-right: 6vw;
+}
+
+.s2{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: url(./photos/gas-station.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.s2Textbg{
+    width: 100vw;
+    height: 100%;
+    background-color: red;
+    transform: skew(var(--skew));
+    position: absolute;
+    left: var(--left);
+    
+}
+
+.s2TextCont{
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    margin-right: 2vw;
+    margin-top: 20vw;
+
+}
+
+.s2TextCont h2{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: center;
+    transform: skew(2deg);
+}
+
+.s2TextCont p{
+    padding-top: 5vh;
+    padding-left: 10vh;
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: center;
+    transform: skew(2deg);
+    
+}
+
+.s3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+.s3Shade{
+    filter: brightness(50%);
+}
+
+.model3{
+    height: 25vh;
+    width: 100%;
+    background: url(./photos/cars/model\ 3.jpg);
+    background-position: 0% 63%;
+    background-size: cover;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.model3 p{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    margin: auto;
+    transition: 1s;
+}
+
+.model3 strong{
+    border-color: aliceblue;
+    transition: 1s;
+}
+
+.model3:hover{
+    height: 50vh;
+    filter: brightness(100%);
+}
+
+.model3:hover p{
+    padding-left: 70%;
+}
+
+.model3:hover strong{
+    color: rgb(43, 43, 43);
+}
+
+
+.modelS{
+    height: 25vh;
+    width: 100%;
+    background: url(./photos/cars/Model\ S.jpg);
+    background-position: 50% 63%;
+    object-fit: cover;
+    background-size: cover;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+}
+.modelS p{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    margin: auto;
+    transition: 1s;
+}
+
+.modelS strong{
+    color: aliceblue;
+    transition: 1s;
+}
+
+.modelS:hover{
+    height: 60vh;
+    background-position: 50% 75%;
+    filter: brightness(100%);
+}
+
+.modelS:hover p{
+    padding-right: 70%;
+}
+
+.modelS:hover strong{
+    color: rgb(221, 43, 43);
+}
+
+.modelX{
+    height: 25vh;
+    width: 100%;
+    background: url(./photos/cars/model\ X.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modelX p{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    margin: auto;
+    transition: 1s;
+}
+
+.modelX strong{
+    color: aliceblue;
+    transition: 1s;
+}
+.modelX:hover{
+    height: 50vh;
+    background-position: 50% 55%;
+    filter: brightness(100%);
+}
+
+.modelX:hover p{
+    padding-right: 70%;
+}
+
+.modelX:hover strong{
+    color: rgb(127, 199, 189);
+}
+
+
+.modelY{
+    height: 25vh;
+    width: 100%;
+    background: url(./photos/cars/model\ Y.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: 1s;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modelY p{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    margin: auto;
+    transition: 1s;
+}
+
+.modelY strong{
+    border-color: aliceblue;
+    transition: 1s;
+}
+
+.modelY:hover{
+    height: 50vh;
+    filter: brightness(100%);
+}
+
+.modelY:hover p{
+    padding-left: 70%;
+}
+
+.modelY:hover strong{
+    color: rgb(44, 81, 248);
+}
+
+.s4{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.leftimg{
+    width: 100%;
+    height: 100%;
+    background: url(./photos/solar-roof.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.s4TextCont{
+    width: var(--s4Expand);
+    height: 100%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.s4TextCont h2{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vw;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: center;
+}
+
+.s4TextCont p{
+    padding-top: 5vh;
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 5vh;
+}
+
+.s4TextCont strong{
+    
+    color: rgb(39, 200, 206);
+}
+
+.rightimg{
+    width: 100%;
+    height: 100%;
+    background: url(./photos/solar-panels.jpg);
+    background-position: 70% 50%;
+    background-size: cover;
+}
+
+.s5{
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(./photos/s5.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.s5border{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    background-color: rgba(170, 49, 49, 0.2);
+    padding: 5vw;
+    border-radius: 2vw;
+}
+
+.s5 h2{
+    color: aliceblue;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    border-radius: 10px;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: center;
+}
+
+.s5 p{
+    padding-top: 5vh;
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2vw;
+    border-color: aliceblue;
+    text-shadow: 2px 2px 10px black;
+    width: 100%;
+    text-align: center;
+}
+
+.quote{
+    font-family: 'Roboto', sans-serif !important;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.right{
+    padding-top: 0vh !important;
+    text-align: right !important;
+}
