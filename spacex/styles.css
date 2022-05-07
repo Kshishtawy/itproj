@@ -95,6 +95,15 @@ body{
     margin: auto;
 }
 
+.scrollDown{
+    position: absolute;
+    width: 1vw;
+    height: auto;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -95%);
+}
+
 .s2{
     height: 100vh;
     width: auto;

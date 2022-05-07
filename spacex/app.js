@@ -20,7 +20,9 @@ tl.from(".elonPic", {x: 100, opacity: 0, duration: 2}, "-=2");
 
 tl.from(".s1", {y: -100, opacity: 0, duration: 2}, "-=2");
 
-tl.from(".spacexLogo", {y: -100, opacity: 0, duration: 2}, "-=3"); // section 1 ends here
+tl.from(".spacexLogo", {y: -100, opacity: 0, duration: 2}, "-=3");
+
+gsap.to(".scrollDown", {y: 1, repeat: -1, ease: "elastic", duration: 2, yoyo: true}); // section 1 ends here
 
 gsap.from(".s2", {scrollTrigger: { trigger: ".s2", start: "top 90%"}, y: 100, opacity: 0, duration: 1}); //scroll trigger starts here
 
