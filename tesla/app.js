@@ -28,6 +28,8 @@ tl.from(".elonPic", {x: -100, opacity: 0, duration: 2}, "-=2");
 
 tl.from(".s1stag", {x: 100, opacity: 0, stagger: 0.5, duration: 2}, "-=2");
 
+tl.from(".icostag", {x: -100, opacity: 0, stagger: 0.5, duration: 1}, "-=2");
+
 gsap.to(".scrollDown", {y: 1, repeat: -1, ease: "elastic", duration: 2, yoyo: true}); // s1 ends here
 
 gsap.from(".s2Textbg", {scrollTrigger: { trigger: ".s2Textbg", start: "top center"}, "--left": "80%", opacity: 0 ,duration: 2, ease: "power1.Out"});

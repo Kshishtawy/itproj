@@ -163,6 +163,37 @@ transform: scale(1.1);
 
 /* end of nav */
 
+.floatIconsCont{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    left: 0%;
+    height: 100%;
+    width: auto;
+    z-index: 10;
+}
+
+.teslaIco{
+    width: 8vw;
+    height: auto;
+    transition: 1s;
+}
+
+.introIco{
+    width: 8vw;
+    height: auto;
+    transition: 1s;
+}
+
+.teslaIco:hover{
+    width: 9vw;
+}
+
+.introIco:hover{
+    width: 9vw;
+}
+
 .introAnim{
     background-color: black;
     position: fixed;
@@ -173,7 +204,7 @@ transform: scale(1.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 11;
 }
 
 .slider{
@@ -186,7 +217,7 @@ transform: scale(1.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 11;
     transform: translateY(-100%);
 }
 .s1{
