@@ -9,6 +9,159 @@ body{
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(41,41,41,1) 27%, rgb(44, 44, 44) 50%, rgb(53, 53, 53) 69%, rgb(41, 41, 41) 97%);
 }
 
+/* the nav part */
+.navbar{
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+.icon{
+    width:200px;
+    float:left;
+    height:70px;
+}
+.logo{
+    color: #fbff00;
+    font-size:35px;
+    font-family:Arial;
+    padding-left:20px;
+    float:left;
+    padding-top:10px;
+}
+.menu{
+width: 400px;
+float:left;
+height:70px;
+}
+ul{
+    float:left;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+ul li{
+    list-style:none;
+    margin-left:62px;
+    margin-top:27px;
+    font-size: 14px;
+z-index: 1;
+}
+ ul li a{
+    text-decoration:none;
+    color:#fff ;
+    font-family:Arial;
+    font-weight:bold;
+    transition:0.4s ease-in-out;
+z-index: 1;
+}
+ul li::after{
+content: '';
+width:0%;
+height:2px;
+background: #fbff00;
+display:block;
+margin: auto;
+transition: 0.5s;
+}
+ul li:hover::after{
+width:100%;
+}
+ul li a:hover{
+    color: #fbff00;
+}
+.pages
+{
+    display:none;
+}
+ul li:hover .pages
+{
+display:block;
+position: absolute;
+margin-top:-10px;
+margin-left:-60px;
+}
+ul li:hover .pages ul
+{
+    display:block;
+    margin:5px;
+}
+ul li:hover .pages ul li
+{
+width:50px;
+padding:0px;
+border-bottom:1px dotted #fff;
+background:transparent;
+border-radius:0;
+text-align:left;
+}
+ul li:hover .pages ul li:last-child
+{
+border-bottom:none;
+}
+ul li:hover .pages ul li a:hover
+{
+color:#fbff00;
+}
+
+.search{
+    width:330px;
+    float:left;
+    margin-left:270px;
+z-index: 1;
+}
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border:1px solid #fbff00;
+    margin-top:13px;
+    color: rgb(255, 255, 255);
+    border-right:none;
+    font-size:20px;
+    float:left;
+    padding:10px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius:15px;
+z-index: 1;
+}
+.btn{
+    width:100px;
+    height: 40px;
+    background: #fbff00;
+    border:2px solid #fbff00;
+    margin-top:13px;
+    color : rgb(0, 0, 0);
+    font-size:15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.btn:focus{
+    outline:none;
+}
+.srch:focus{
+    outline: none;
+}
+button{
+    color:#ffffff;
+    font-size:medium;
+    padding: 10px 25px;
+    background: transparent;
+    background-color: #000000;
+    border: 1px solid #fbfcfd;
+    border-radius: 20px;
+    outline: none;
+    cursor:pointer;
+    transition: 0.4s ease;
+}
+button:hover{
+background-color: #fbff00;
+color: #000000;
+transform: scale(1.1);
+}
+
+/* end of nav */
 
 .introAnim{
     background-color: black;
@@ -37,7 +190,7 @@ body{
     transform: translateY(-100%);
 }
 .s1{
-    height: 100vh;
+    height: 93vh; /* the only 93vh due to nav */
     width: 100%;
     display: flex;
     background: url(./Photos/galaxy3.png);
