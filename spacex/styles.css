@@ -221,7 +221,7 @@ transform: scale(1.1);
     transform: translateY(-100%);
 }
 .s1{
-    height: 93vh; /* the only 93vh due to nav */
+    height: 100vh; /* the only 93vh due to nav */
     width: 100%;
     display: flex;
     background: url(./Photos/galaxy3.png);
@@ -338,17 +338,14 @@ transform: scale(1.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 6vh;
     scroll-snap-align: start;
 }
 
 .failvid{
     position: absolute;
-    left: 0;
-    top: 200vh;
     width: 100%;
     height: auto;
-    z-index: -1;
+    z-index: 0;
 }
 
 .falconCont{
